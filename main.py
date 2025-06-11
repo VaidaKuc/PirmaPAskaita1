@@ -178,18 +178,18 @@ a = random.randint(0,100)
 b = random.randint(0,100)
 c = random.randint(0,100)
 print(a, b, c)
-sum = 0
-count = 0
-if  10 < a < 90:
-    sum += a
-    count +=1
-if  10 < b < 90:
-    sum += b
-    count +=1
-if  10 < c < 90:
-    sum += c
-    count +=1
-print(sum/count)
+# sum = 0
+# count = 0
+# if  10 < a < 90:
+#     sum += a
+#     count +=1
+# if  10 < b < 90:
+#     sum += b
+#     count +=1
+# if  10 < c < 90:
+#     sum += c
+#     count +=1
+# print(sum/count)
 
 import datetime
 import random
@@ -667,3 +667,32 @@ print("--------")
 # print(sum)
 # print(count)
 # print(sum / count)
+
+print("____masyvai______")
+# Sugeneruokite masyvą iš 30 elementų (indeksai nuo 0 iki 29), kurių reikšmės yra atsitiktiniai skaičiai nuo 5 iki 25.
+# Naudodamiesi 1 uždavinio masyvu:
+# Suskaičiuokite kiek masyve yra reikšmių didesnių už 10;
+# Raskite didžiausią masyvo reikšmę;
+# Suskaičiuokite visų reikšmių sumą;
+# Sukurkite naują masyvą, kurio reikšmės yra 1 uždavinio masyvo reikšmes minus tos reikšmės indeksas;
+# Papildykite masyvą papildomais 10 elementų su reikšmėmis nuo 5 iki 25, kad bendras masyvas padidėtų iki indekso 39;
+# Iš masyvo elementų sukurkite du naujus masyvus. Vienas turi būti sudarytas iš neporinių indekso reikšmių, o kitas iš porinių;
+# Masyvo elementus su poriniais indeksais padarykite lygius 0 jeigu jie didesni už 15;
+# Suraskite pirmą (mažiausią) indeksą, kurio elemento reikšmė didesnė už 10;
+
+masyvas = [random.randint(5, 25) for _ in range(30)]
+print(masyvas)
+didesniu_uz_10 = 0
+for i in masyvas:
+    if i > 10:
+        didesniu_uz_10 += 1
+print("Reikšmių didesnių už 10 yra:", didesniu_uz_10)
+max_reikšmė = max(masyvas)
+print("Didžiausia masyvo reikšmė:", max_reikšmė)
+sum_reikšmė = sum(masyvas)
+print("Suma:", sum_reikšmė)
+
+naujas_masyvas = []
+for i, val in enumerate(masyvas):
+    print(i, val, val - i)
+    naujas_masyvas.append(val - i)
