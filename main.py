@@ -575,7 +575,25 @@ while gylis < 85:
 print("Smūgis", smugiai, "- įkalta", round(gylis, 2), "mm")
 print("Įkalė per:", smugiai, "smūgis")
 
+print("--------")
 
-git config --global user.name "VaidaKuc"
-git config --global user.email "vaida.babiliene@gmail.com"
+my_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(my_numbers)
+print(my_numbers[2])
+print(my_numbers[1::2])
 
+empty_list = []
+print(empty_list)
+empty_list.append(20)
+print(empty_list)
+empty_list.extend([14, 20, 30])
+print(empty_list)
+
+copy = my_numbers.copy()
+copy.remove(7)
+print(copy)
+print(my_numbers)
+
+arr_2d = [
+    [1,2,3],
+    [2,3,4],
