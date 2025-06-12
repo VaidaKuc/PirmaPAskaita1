@@ -692,7 +692,18 @@ print("Didžiausia masyvo reikšmė:", max_reikšmė)
 sum_reikšmė = sum(masyvas)
 print("Suma:", sum_reikšmė)
 
-naujas_masyvas = []
-for i, val in enumerate(masyvas):
-    print(i, val, val - i)
-    naujas_masyvas.append(val - i)
+# naujas_masyvas = []
+# for i, val in enumerate(masyvas):
+#     print(i, val, val - i)
+#     naujas_masyvas.append(val - i)
+
+print("-----funkcijos---------")
+
+
+def say_hi():
+    print("hi")
+say_hi()
+
+def say_hi_to(name):
+    print("hi " +name)
+say_hi_to("Jonas")
